@@ -936,7 +936,7 @@ textarea.bio-properties-panel-input {
 .bio-icon-left button.active:not(.disabled) {
   background-color: var(--color-grey-225-10-90);
   box-shadow: 0 0 1px;
-  box-shadow: 0px 0px 10px var(--color-grey-225-10-80) inset;
+  box-shadow: 0px 0px 5px var(--color-grey-225-10-80) inset;
 }
 
 .bio-icon-left button.disabled {
