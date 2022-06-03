@@ -7,9 +7,9 @@
     "all": "run-s bundle",
     "dev": "run-s bundle:less watch:js",
     "start": "run-s bundle serve",
-    "serve": "sirv public --dev",
+    "serve": "sirv docs --dev",
     "bundle": "run-s bundle:*",
-    "bundle:less": "lessc src/app.less public/app.css",
+    "bundle:less": "lessc src/app.less docs/app.css",
     "bundle:js": "webpack -c webpack.config.js",
     "watch:js": "run-s \"bundle:js -- --watch\""
   },
