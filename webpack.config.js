@@ -6,7 +6,7 @@ module.exports = {
   mode: 'development',
   entry: './src/app.js',
   output: {
-    path: path.resolve(__dirname, 'docs'),
+    path: path.resolve(__dirname, 'docs/snapshots/2022-07-11'),
     filename: 'app.js'
   },
   module: {

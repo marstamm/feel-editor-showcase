@@ -10,8 +10,8 @@ import {
 
 import ZeebeBpmnModdle from 'zeebe-bpmn-moddle/resources/zeebe.json'
 
-import diagramXML from '../resources/newDiagram.bpmn';
-import template from './template';
+import diagramXML from '../resources/simple.bpmn';
+// import template from './template';
 
 
 var container = $('#js-drop-zone');
@@ -32,7 +32,7 @@ const bpmnModeler = new BpmnModeler({
   moddleExtensions: {
     zeebe: ZeebeBpmnModdle
   },
-  elementTemplates: template
+  // elementTemplates: template
 });
 
 console.log(bpmnModeler);
