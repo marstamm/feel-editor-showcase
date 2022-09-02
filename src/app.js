@@ -11,6 +11,7 @@ import {
 import ZeebeBpmnModdle from 'zeebe-bpmn-moddle/resources/zeebe.json'
 
 import diagramXML from '../resources/simple.bpmn';
+import { context } from './variableContext';
 // import template from './template';
 
 
@@ -21,7 +22,8 @@ var canvas = $('#js-canvas');
 const bpmnModeler = new BpmnModeler({
   container: canvas,
   propertiesPanel: {
-    parent: '#js-properties-panel'
+    parent: '#js-properties-panel',
+    variableContext: context
   },
   additionalModules: [
     BpmnPropertiesPanelModule,
