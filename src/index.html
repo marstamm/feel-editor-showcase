@@ -13,27 +13,17 @@
 </head>
 <body>
   <div class="content with-diagram" id="js-drop-zone">
-
-    <div class="message intro">
-      <div class="note">
-        Drop BPMN diagram from your desktop or <a id="js-create-diagram" href>create a new diagram</a> to get started.
+    <div class="row1">
+      <div class="canvas" id="js-canvas"></div>
+      <div class="properties-panel-parent" id="js-properties-panel"></div>
+    </div>
+    <div class="row2">
+      <div class="contextEditor">
       </div>
     </div>
+</div>
 
-    <div class="message error">
-      <div class="note">
-        <p>Ooops, we could not display the BPMN 2.0 diagram.</p>
-
-        <div class="details">
-          <span>Import Error Details</span>
-          <pre></pre>
-        </div>
-      </div>
-    </div>
-
-    <div class="canvas" id="js-canvas"></div>
-    <div class="properties-panel-parent" id="js-properties-panel"></div>
-  </div>
+</body>
 
   <script src="app.js"></script>
 </html>
