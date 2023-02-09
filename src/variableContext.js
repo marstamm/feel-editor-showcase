@@ -1,58 +1,50 @@
 export const context =
 {
-    "type:send-message": {
-        "inputs": {
-            "exampleData": [
-                {
-                    "clusterId": "test",
-                    "token": ".....",
-                    "method": "chat.postMessage",
-                    "data": {
-                        "channel": "...",
-                        "text": "..."
-                    }
-                }
-            ]
+  "Activity_0pn4zut": 
+  [
+    {
+      name: 'response',
+      type: 'Context',
+      info: 'Response from the API',
+      entries: [
+        {
+          name: 'id',
+          type: 'Number',
+          info: 'The customer ID'
         },
-        "outputs": {
-            "exampleData": [
-                {
-                    "result": {
-                        "channel": "D03FJ3UJHJM",
-                        "message": {
-                            "appId": "A03BBJWJSTD",
-                            "botId": "B03C1BBGC64",
-                            "team": "T03BQ73M1UH",
-                            "text": ":wave: Hi from the slack connector! :partying_face:",
-                            "ts": "1654636029.472959",
-                            "type": "message",
-                            "user": "U03BBJN8B34"
-                        },
-                        "ts": "1654636029.472959"
-                    }
-                }
-            ]
-        }
-    },
-    "id:Process_1": {
-        "inputs": {
-            "exampleData": [
-                {
-                    "text": ":wave: Hi from the slack connector! :partying_face:",
-                    "data": {
-                        "channel": "D03FJ3UJHJM",
-                        "user": "John Doe"
-                    }
-                }
-            ]
+        {
+          name: 'name',
+          type: 'String',
+          info: '"Jon Doe"'
         },
-        "outputs": {
-            "exampleData": [
-                {
-                    "messageId": "T03BQ73M1UH"
-                }
-            ]
-
+        {
+          name: 'dob',
+          type: 'String',
+          info: 'Date of Birth'
+        },
+        {
+          name: 'contact',
+          type: 'Context',
+          info: 'Contact information',
+          entries: [
+            {
+              name: 'email',
+              type: 'String',
+              info: 'john.doe@company.tld'
+            },
+            {
+              name: 'Phone',
+              type: 'String',
+              info: '+1 555 123 4567'
+            },
+            {
+              name: 'Address',
+              type: 'String',
+              info: '123 Main Street, Anytown, USA'
+            }
+          ]
         }
+      ]
     }
+  ]
 }

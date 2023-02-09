@@ -6,7 +6,7 @@ module.exports = {
   mode: 'development',
   entry: './src/app.js',
   output: {
-    path: path.resolve(__dirname, 'docs/variable-handling'),
+    path: path.resolve(__dirname, 'docs/io-mappings'),
     filename: 'app.js'
   },
   module: {

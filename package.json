@@ -34,13 +34,15 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@bpmn-io/properties-panel": "^0.10.0",
+    "@bpmn-io/variable-resolver": "github:bpmn-io/variable-resolver#51139c86b45002ac95170423e393a50d20549469",
+    "@bpmn-io/properties-panel": "^1.3.1",
     "@codemirror/commands": "^6.1.0",
-    "bpmn-js": "^9.0.1",
-    "bpmn-js-properties-panel": "^1.0.0-alpha.0",
+    "bpmn-js": "11.1.0",
+    "bpmn-js-properties-panel": "github:bpmn-io/bpmn-js-properties-panel#2771cc6f3897882e962363d9b7c0a0e029b2fae8",
+    "camunda-bpmn-js-behaviors": "^0.4.0",
     "jquery": "^3.5.1",
     "min-dash": "^3.7.0",
-    "zeebe-bpmn-moddle": "^0.12.1"
+    "zeebe-bpmn-moddle": "^0.16.0"
   },
   "devDependencies": {
     "@codemirror/lang-json": "^6.0.0",

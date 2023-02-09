@@ -26,9 +26,24 @@ export const Editor = function({
       ]
     })
     
-    return new EditorView({
+    const editor = new EditorView({
       state,
       parent: document.querySelector('.contextEditor')
     })
+
+    const setValue = function(value) {
+      editor.dispatch({
+        changes: {
+          from: 0,
+          to: editor.state.doc.length,
+          insert: value,
+        }
+      });
+    };
+
+    return {
+      editor,
+      setValue
+    }
 }
 
